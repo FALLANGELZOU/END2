@@ -1,0 +1,22 @@
+name: "END2" # 模型名称
+root_dir: "./output/" # 输出路径
+gpus: [0] # 使用GPU
+batch_size: 32 # 批量大小
+num_workers: 32 # 工作线程数
+max_epochs: 500 # 训练次数
+find_unused_parameters: False # 是否查找未使用的参数
+ckpt_path: null # 模型路径
+lr: 0.0008 # 学习率
+val_epoch: 10 # 验证次数
+
+msg_len: 30
+data_path: "/home/light_sun/workspace/DWSF/DIV2K/DIV2K_train" # 训练数据
+valid_data_path: "/home/light_sun/workspace/DWSF/DIV2K/DIV2K_valid" # 验证数据
+img_size: 128
+data_repeat: 10 # 训练数据重复次数
+
+w_student_loss: 0.01
+w_msg_loss: 8
+w_quantity_loss: 5
+
+swap_epoch: 1 # 交换学习间隔
