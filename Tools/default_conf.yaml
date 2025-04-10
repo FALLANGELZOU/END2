@@ -1,0 +1,10 @@
+name: "Default"
+root_dir: "./output"
+gpus: [0]
+batch_size: 24
+num_workers: 12
+max_epochs: 100
+find_unused_parameters: false
+ckpt_path: null
+lr: 0.001
+val_epoch: 10

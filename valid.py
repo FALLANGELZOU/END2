@@ -1,11 +1,11 @@
 import torch
 from tqdm import tqdm
 from model import END2
-from FastTools.metre import PSNR
-from FastTools.metre_util.ssim import SSIM
-from FastTools.steganography.utils.common import msg_acc
-from FastTools.util.ImgUtil import clip_psnr
-from FastTools.util.TrainUtil import Args
+from Tools.metre import PSNR
+from Tools.metre_util.ssim import SSIM
+from Tools.steganography.utils.common import msg_acc
+from Tools.util.ImgUtil import clip_psnr
+from Tools.util.TrainUtil import Args
 from T1Data import T1Dataset
 
 

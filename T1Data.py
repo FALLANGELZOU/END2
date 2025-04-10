@@ -1,10 +1,10 @@
 
-from FastTools.dataset.dataset import LDataset, read_img
+from Tools.dataset.dataset import LDataset, read_img
 import os
 from torchvision import transforms
 
-from FastTools.steganography.utils.common import gen_random_msg
-from FastTools.util.TrainUtil import Args
+from Tools.steganography.utils.common import gen_random_msg
+from Tools.util.TrainUtil import Args
 from torch.utils.data import Dataset, DataLoader
 class T1Dataset(LDataset):
     def __init__(self, args, valid=False) -> None:

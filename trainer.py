@@ -1,8 +1,8 @@
 
 
 from T1Data import T1Dataset
-from FastTools.light.LightModel import LModel, LTrainer
-from FastTools.util.TrainUtil import Args
+from Tools.light.LightModel import LModel, LTrainer
+from Tools.util.TrainUtil import Args
 from model import END2
 from lightning.pytorch.callbacks import ModelCheckpoint
 

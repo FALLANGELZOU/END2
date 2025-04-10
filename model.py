@@ -1,15 +1,15 @@
 import torch
 import torch.nn as nn
 
-from FastTools.light.LightModel import LModel
-from FastTools.metre import PSNR
-from FastTools.module.SENet import SENet, SENet_decoder
-from FastTools.module.common import MLP, ConvBNRelu, ExpandNet, Flatten
-from FastTools.steganography.Noiser.Noiser import Noiser, get_default_Noiser
-from FastTools.steganography.utils.common import msg_acc
+from Tools.light.LightModel import LModel
+from Tools.metre import PSNR
+from Tools.module.SENet import SENet, SENet_decoder
+from Tools.module.common import MLP, ConvBNRelu, ExpandNet, Flatten
+from Tools.steganography.Noiser.Noiser import Noiser, get_default_Noiser
+from Tools.steganography.utils.common import msg_acc
 import torch.nn.functional as F
 
-from FastTools.util.TrainUtil import Args
+from Tools.util.TrainUtil import Args
 
 
 class SENet2D_ST_Encoder(nn.Module):
